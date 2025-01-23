@@ -3,9 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webauftritt</title>
+    <meta name="description" content="A basic HTML index page layout" />
+    <title>Werbeauftritt</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
-    
+
+---Navigation---
+
+   <nav>
+    <ul class="navbar">
+        <li><img class="logo" src=""></li>
+        <li><a href="index.html" class="navigation">Start</a></li>
+        <li><a href="about.me.html" class="navigation">Über Mich</a></li>
+        <li><a href="projekte.html" class="navigation">Projekte</a></li>
+        <li><a href="contact.html" class="navigation">Kontakt</a></li>
+    </ul>
+   </nav>
+
+---Startbilldschirm---
+
+<main>  
+    <div class="start">
+    <h1>Hi, Ich bin Denise</h1>
+    <h3>UI und UX Designer</h3>
+    <p>It's good as an artist to always remember to see things in a new, weird way. -Tim Burton</p>
+   </div>
+
+---Projekt-Karten---
+
+<div class="cards">
+    <div class="sectionheader">
+        <h2>Projekte</h2>
+    </div>
+    <div class="card" href="">
+        <a class="picture">
+            <img class="kiwiconlogo" src="./kiwicon.png"></img>
+        </a>
+        <div class="content">
+            <h2>KIWICON GmbH</h2>
+            <p>Beispieltext</p>
+        </div>
+    </div>
+    <div class="card" href="">
+        <div class="content">
+            <h2>LöwenTours</h2>
+            <p>Beispieltext</p>
+        </div>
+        <a class="picture">
+            <img class="loewentourslogo" src="./loewentours.png"></img>
+        </a>
+    </div>
+    <div class="card" href="">
+        <a class="picture">
+            <img class="plantconylogo" src="./plantcony.png"></img>
+        </a>
+        <div class="content">
+            <h2>Plantcony</h2>
+            <p>Beispieltext</p>
+        </div>
+    </div>
+</div>
+
+---Bild+Text Vorstellung---
+
+<div class="kacheln">
+    <div class="sectionheader">
+        <h2>Über Mich</h2>
+    </div>
+    <div class="kachel">
+        <h2> Das bin ich</h2>
+        <p>Beispieltext</p>
+    </div>
+    <a class="picture">
+        <img class="Itsme" src=".ich.jpeg" width="320" height="250"/></img>
+    </a>
+</div>
+
+<div class="forms">
+    <div class="sectionheader">
+        <h2>Kontaktiere mich</h2>
+
+    <div class="form">
+        <form method="post">
+            <lable> Name: </lable>
+            <input type="Text" name="Name"> <br>
+            <lable>E-Mail: </lable>
+            <input type="E-Mail" nname="E-Mail"> <br>
+            <lable> Nachricht: </lable>
+            <textarea name="nachricht"></textarea>
+            <button type="submit" name="abschicken"></button> 
+        </form>
+    </div>
+</div>
+</main>
+<footer>
+<div class="footer">
+    <div class="foottercontent">
+        <div class="contact">
+            <h3>kontaktiere mich</h3>
+            <a>denise.bachenberg@iu-study.org</a>
+        </div>
+        <div class="connect">
+            <h3>Let`s connect</h3>
+            <li><a href="https://www.linkedin.com/in/denise-b-50437626a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"class="LinkedIN">LinkedIn</a></li>
+        </div>
+        <div class="copyright">
+            <h3>2025 Denise Bachenberg</h3>
+            <a  href="legal.html" class="legals">Datenschutz</a>
+        </div>
+    </div>
+</div>
+
+
+</footer>
+ 
 </body>
+
 </html>
