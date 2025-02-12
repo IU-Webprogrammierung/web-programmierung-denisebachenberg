@@ -1,8 +1,219 @@
 body{
     background-color: rgb(255, 253, 252);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+nav{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.skillheader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:200px;
+    padding: 10px;
+    align-items: stretch;
+}
+
+.footercontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardheader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    gap:25px;
+
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+}
+
+.kachelheader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.kacheln{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    padding: 25px;
+}
+
+.kachel{
+    display: flex;
+    flex-direction: column;
+}
+
+.lebenslaufheader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.containercontent{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.content{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    gap: 25px;
+}
+
+.contactheader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.contactform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+}
+
+.input-field{
+    display:flex;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    width: 50vw;
+}
+
+button{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
 }
 
 img {
-    height: 300px;
+    width: 300px;
+}
+
+h1{
+    font-size: 64px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+nav a{
+    font-size: 16px;
+}
+
+
+
+/* Device Responsive */
+    
+@media (max-width:576px)
+{
+main{
+    display: flex;
+ }
+ footer{
+    flex-direction: column;
+ }
+ .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 }
 
