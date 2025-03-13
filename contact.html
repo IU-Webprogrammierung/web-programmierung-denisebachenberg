@@ -1,84 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A basic HTML index page layout" />
-    <title>Werbeauftritt</title>
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Chango&family=Quicksand:wght@300..700&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A basic HTML index page layout" />
+        <title>Werbeauftritt</title>
+        <link rel="stylesheet" href="style.css">
 
-</head>
-<body>
-    <nav>
-        <ul id="desktop-navigation">
-            <li><a href="index.html" class="navigation">Start</a></li>
-            <li><a href="aboutme.html" class="navigation">Über Mich</a></li>
-            <li><a href="projekte.html" class="navigation">Projekte</a></li>
-            <li><a href="contact.html" class="navigation">Kontakt</a></li>
-        </ul>
-        <button id="burger" popovertarget="burgermenu">
-            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
-        </button>
-        <div id="burgermenu" popover>
-            <ul id="mobile-navigation">
+    </head>
+    <body>
+        <nav>
+            <ul id="desktop-navigation">
                 <li><a href="index.html" class="navigation">Start</a></li>
                 <li><a href="aboutme.html" class="navigation">Über Mich</a></li>
                 <li><a href="projekte.html" class="navigation">Projekte</a></li>
                 <li><a href="contact.html" class="navigation">Kontakt</a></li>
             </ul>
-        </div>
-    </nav>
-    
-    <main> 
-        <div class="contactheader">
-            <div>
-                <h2>Kontaktier mich</h2>
+            <button id="burger" popovertarget="burgermenu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path
+                        stroke="none" d="M0 0h24v24H0z" fill="none" /><path
+                        d="M4 6l16 0" /><path d="M4 12l16 0" /><path
+                        d="M4 18l16 0" /></svg>
+            </button>
+            <div id="burgermenu" popover>
+                <ul id="mobile-navigation">
+                    <li><a href="index.html" class="navigation">Start</a></li>
+                    <li><a href="aboutme.html" class="navigation">Über
+                            Mich</a></li>
+                    <li><a href="projekte.html"
+                            class="navigation">Projekte</a></li>
+                    <li><a href="contact.html"
+                            class="navigation">Kontakt</a></li>
+                </ul>
             </div>
-        </div> 
-        <div class="contactform">
-            <form>
-                <div class="input-container">
-                  <i class="user icon"></i>
-                  <input class="input-field" type="text" placeholder="Username">
+        </nav>
+
+        <main>
+            <div class="contactheader">
+                <div>
+                    <h1>Kontaktier mich</h1>
                 </div>
-              
-                <div class="input-container">
-                  <i class="envelope icon"></i>
-                  <input class="input-field" type="text" placeholder="Email">
-                </div>
-              
-                <div class="input-container">
-                  <i class="key icon"></i>
-                  <input class="input-field" type="nachricht" placeholder="Nachricht">
-                </div>
-              
-                <button type="submit" class="btn">Senden</button>
-              </form>
-        </div>
-        
-    </main>
-    
-    <footer>
-        <div class="footercontent">
-            <h3>kontaktiere mich</h3>
-            <a>denise.bachenberg@iu-study.org</a>
-        </div>
-        <div class="footercontent">
-            <h3>Let`s connect</h3>
-            <a href="https://www.linkedin.com/in/denise-b-50437626a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"class="LinkedIN">LinkedIn</a>
-        </div>
-        <div class="footercontent">
-            <h3>2025 Denise Bachenberg</h3>
-            <a href="legal.html" class="legals">Datenschutz</a>
-        </div>
-    </footer>
-</body>
+            </div>
+            <div class="contactform">
+                <form action="index.html">
+                    <div class="input-container">
+                        <i class="user icon"></i>
+                        <input class="input-field" type="text"
+                            placeholder="Name">
+                    </div>
+
+                    <div class="input-container">
+                        <i class="envelope icon"></i>
+                        <input class="input-field" type="email"
+                            placeholder="Email">
+                    </div>
+
+                    <div class="input-container">
+                        <i class="key icon"></i>
+                        <textarea class="input-field"
+                            placeholder="Nachricht"></textarea>
+                    </div>
+                    <button type="submit" class="btn" redi>Senden</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footercontent">
+                <h3>kontaktiere mich</h3>
+                <a>denise.bachenberg@iu-study.org</a>
+            </div>
+            <div class="footercontent">
+                <h3>Let`s connect</h3>
+                <a
+                    href="https://www.linkedin.com/in/denise-b-50437626a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    class="LinkedIN">LinkedIn</a>
+            </div>
+            <div class="footercontent">
+                <h3>2025 Denise Bachenberg</h3>
+                <a href="legal.html" class="legals">Datenschutz</a>
+            </div>
+        </footer>
+    </body>
 
 </html>
