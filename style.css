@@ -84,7 +84,7 @@ li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 1000px;
+  height: 1080px;
   align-items: stretch;
 }
 
@@ -95,6 +95,7 @@ li a {
   align-items: center;
   color: white;
   align-items: center;
+  gap: 50px;
 }
 
 .text * {
@@ -105,9 +106,12 @@ li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: rgb(255, 255, 255);
   background-color: rgba(253, 221, 192, 0.257);
   height: 300px;
+  font-family: "quicksand";
+  font-size: 20pt;
 }
 
 .quotetext {
@@ -115,9 +119,9 @@ li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Chango";
-  padding: 150px;
-  font-size: 18pt;
+  font-family: "Princess Sofia";
+  padding: 20px;
+  font-size: 30pt;
 }
 
 .skillheader {
@@ -154,7 +158,6 @@ li a {
 
 .skillcontent img {
   width: 250px;
-
 }
 
 .skillcontent span {
@@ -194,6 +197,7 @@ footer {
 footer a {
   color: rgb(240, 255, 255);
   text-decoration: none;
+  padding: 10px;
 }
 
 .footercontent {
@@ -225,6 +229,11 @@ footer a {
   display: flex;
   flex-direction: row;
   margin-bottom: 80px;
+  gap: 40px;
+}
+
+.cards .card:nth-child(2n + 1) {
+  flex-direction: row-reverse;
 }
 
 .cards {
@@ -232,7 +241,7 @@ footer a {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  padding: 10px;
+  padding: 40px;
 }
 
 .content {
@@ -244,23 +253,21 @@ footer a {
   font-family: "Quicksand";
   padding: 50px;
   border-radius: 20px;
+  flex: 3;
+}
+
+.picturecard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
 .picturecard img {
-  height: 400px;
-  width: 400px;
-  padding-right: 80px;
-  margin-left: 80px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
-.picturecardfirst img {
-  height: 150px;
-  width: 350px;
-  padding-right: 80px;
-  padding-top: 80px;
-  margin-left: 80px;
+  max-width: 350px;
+  height: auto;
+  width: 70%;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -303,7 +310,7 @@ footer a {
   color: rgb(240, 255, 255);
   padding: 40px;
   flex: 2;
-  gap:20px;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -333,8 +340,9 @@ footer a {
 
 .section-header {
   align-self: center;
-  padding:80px;
+  padding: 80px;
 }
+
 .lebenslaufheader .row {
   display: flex;
   height: 300px;
@@ -347,7 +355,7 @@ footer a {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
+  padding: 40px;
   justify-content: center;
 }
 
@@ -426,10 +434,9 @@ form {
   background-color: rgba(253, 221, 192, 0.257);
   color: rgb(240, 255, 255);
   font-family: "Quicksand";
-  margin: 100px;
+  margin: 80px;
   padding: 80px;
   border-radius: 20px;
- 
 }
 
 .input-container {
@@ -484,11 +491,25 @@ h4 {
 }
 /* Device Responsive */
 
+@media (max-width: 1000px) {
+  .lebenslaufheader .row {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    align-items: stretch;
+    padding: 20px;
+  }
+
+  .lebenslaufheader .row div:not(.filled-content) {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: bold;
-    margin: 20px 0;
+    margin: 10px 0;
   }
 
   h2 {
@@ -513,7 +534,7 @@ h4 {
   #mobile-navigation {
     flex-direction: column;
     align-items: center;
-    font-size: 40px;
+    font-size: 30px;
   }
 
   #burger {
@@ -521,10 +542,21 @@ h4 {
   }
   .card {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     justify-content: center;
     align-items: center;
     padding: 20px;
+  }
+  .quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(253, 221, 192, 0.257);
+    height: 300px;
+    font-family: "quicksand";
+    font-size: 16pt;
   }
 
   .quotetext {
@@ -532,9 +564,9 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Chango";
-    padding: 100px;
-    font-size: 14pt;
+    font-family: "Princess Sofia";
+    padding: 50px;
+    font-size: 16pt;
   }
 
   .kacheln {
@@ -548,7 +580,6 @@ h4 {
     gap: 40px;
   }
 
-  
   .kachel {
     display: flex;
     flex-direction: column;
@@ -557,7 +588,7 @@ h4 {
     background-color: rgba(253, 221, 192, 0.257);
     color: rgb(240, 255, 255);
     padding: 40px;
-    gap:20px;
+    gap: 20px;
     justify-content: center;
     border-radius: 20px;
   }
@@ -586,35 +617,30 @@ h4 {
     background-color: rgba(253, 221, 192, 0.257);
     color: rgb(240, 255, 255);
     font-family: "Quicksand";
-    border-radius: 0;
+    border-radius: 20px;
   }
 
   .picturecard img {
-    height: 300px;
-    width: 300px;
-    padding: 80px;
-    margin-left: 80px;
-    margin-right: 80px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
     border-color: #9c6f5c;
   }
-  .picturecardfirst img {
-    height: 150px;
-    width: 300px;
-    padding: 80px;
-    margin-left: 80px;
-    margin-right: 80px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-color: #9c6f5c;
+
+  .contactheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    color: rgb(240, 255, 255);
+    font-family: "Quicksand";
   }
+
   footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 80px;
     background-color: rgba(253, 221, 192, 0.257);
     color: rgb(240, 255, 255);
     font-family: "Quicksand";
