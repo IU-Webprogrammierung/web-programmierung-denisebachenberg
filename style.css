@@ -504,6 +504,8 @@ h4 {
   .lebenslaufheader .row div:not(.filled-content) {
     display: none;
   }
+  
+  
 }
 
 @media (max-width: 768px) {
@@ -541,6 +543,7 @@ h4 {
   #burger {
     display: flex;
   }
+
   .card {
     display: flex;
     flex-direction: column !important;
@@ -548,6 +551,7 @@ h4 {
     align-items: center;
     padding: 20px;
   }
+
   .quote {
     display: flex;
     flex-direction: column;
@@ -569,6 +573,42 @@ h4 {
     padding: 50px;
     font-size: 16pt;
   }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    padding: 80px;
+    flex-wrap: wrap;
+  }
+  
+  .skillcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .skillcontent img {
+    width: 200px;
+  }
+  
+  .skillcontent span {
+    opacity: 1;
+    position: absolute;
+    font-size: 45px;
+    font-style: bold;
+    color: white;
+    padding-top:300px
+  }
+  
 
   .kacheln {
     display: flex;
