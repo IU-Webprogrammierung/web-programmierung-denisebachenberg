@@ -5,9 +5,10 @@ body {
   margin: 0px;
   flex-direction: column;
   align-items: stretch;
-  background-image: url("img/background.jpeg");
-  backdrop-filter: blur(15px) saturate(100%);
+  background-image: url("img/background2.jpeg");
+  background-size: 100%;
   font-family: "quicksand";
+  
 }
 
 main {
