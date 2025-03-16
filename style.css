@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(255, 253, 252);
+  background-color: white;
   width: 100%;
   display: flex;
   margin: 0px;
@@ -8,7 +8,6 @@ body {
   background-image: url("img/background2.jpeg");
   background-size: 100%;
   font-family: "quicksand";
-  
 }
 
 main {
@@ -108,7 +107,7 @@ li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(255, 255, 255);
+  color: white;
   background-color: rgba(253, 221, 192, 0.257);
   height: 300px;
   font-family: "quicksand";
@@ -132,7 +131,7 @@ li a {
   align-items: center;
   padding-bottom: 20px;
   padding-top: 80px;
-  color: azure;
+  color: white;
 }
 
 .skills {
@@ -188,7 +187,7 @@ footer {
   align-items: flex-start;
   gap: 40px;
   background-color: rgba(253, 221, 192, 0.257);
-  color: rgb(240, 255, 255);
+  color: white;
   font-family: "Quicksand";
   padding: 40px;
   margin-top: 80px;
@@ -196,7 +195,7 @@ footer {
 }
 
 footer a {
-  color: rgb(240, 255, 255);
+  color: white;
   text-decoration: none;
   padding: 10px;
 }
@@ -222,7 +221,7 @@ footer a {
   align-items: center;
   padding-bottom: 80px;
   padding-top: 80px;
-  color: rgb(240, 255, 255);
+  color: white;
   font-family: "Quicksand";
 }
 
@@ -250,7 +249,7 @@ footer a {
   flex-direction: column;
   justify-content: center;
   background-color: rgba(253, 221, 192, 0.257);
-  color: rgb(240, 255, 255);
+  color: white;
   font-family: "Quicksand";
   padding: 50px;
   border-radius: 20px;
@@ -282,7 +281,7 @@ footer a {
   align-items: center;
   padding-bottom: 20px;
   padding-top: 120px;
-  color: azure;
+  color: white;
 }
 
 .kacheln {
@@ -308,7 +307,7 @@ footer a {
   align-items: flex-start;
   font-family: "quicksand";
   background-color: rgba(253, 221, 192, 0.257);
-  color: rgb(240, 255, 255);
+  color:white;
   padding: 40px;
   flex: 2;
   gap: 20px;
@@ -336,7 +335,7 @@ footer a {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  color: azure;
+  color: white;
 }
 
 .section-header {
@@ -417,7 +416,7 @@ footer a {
   align-items: center;
   padding-bottom: 80px;
   padding-top: 80px;
-  color: rgb(240, 255, 255);
+  color: white;
   font-family: "Quicksand";
 }
 
@@ -433,7 +432,7 @@ form {
   justify-content: center;
   align-items: center;
   background-color: rgba(253, 221, 192, 0.257);
-  color: rgb(240, 255, 255);
+  color: white;
   font-family: "Quicksand";
   margin: 80px;
   padding: 80px;
@@ -459,17 +458,22 @@ form {
 
 button {
   display: flex;
-  color: #fff6e5;
-  background-color: rgba(228, 138, 102, 0.586);
-  padding: 25px;
+  color: white;
+  background: rgb(81, 22, 114);
+  padding: 20px 60px;
   margin-top: 40px;
-  border: none;
-  border-radius: 16px;
-  border-color: white;
-  border-style: solid;
-  border-width: 2px;
+  border:none;
+  border-radius: 20px;
   cursor: pointer;
+  font-family: "quicksand";
+  font-size: 20px;
 }
+
+button:hover{
+  color: rgb(52, 30, 103);
+  background: white;
+}
+
 
 h1 {
   font-size: 100px;
@@ -504,7 +508,6 @@ h4 {
   .lebenslaufheader .row div:not(.filled-content) {
     display: none;
   }
-  
   
 }
 
@@ -557,7 +560,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: white;
     background-color: rgba(253, 221, 192, 0.257);
     height: 300px;
     font-family: "quicksand";
@@ -627,7 +630,7 @@ h4 {
     align-items: flex-start;
     font-family: "quicksand";
     background-color: rgba(253, 221, 192, 0.257);
-    color: rgb(240, 255, 255);
+    color: white;
     padding: 40px;
     gap: 20px;
     justify-content: center;
@@ -656,14 +659,11 @@ h4 {
     flex-direction: column;
     justify-content: center;
     background-color: rgba(253, 221, 192, 0.257);
-    color: rgb(240, 255, 255);
+    color: white;
     font-family: "Quicksand";
     border-radius: 20px;
   }
 
-  .picturecard img {
-    border-color: #9c6f5c;
-  }
 
   .contactheader {
     display: flex;
@@ -672,8 +672,7 @@ h4 {
     align-items: center;
     padding-bottom: 80px;
     padding-top: 80px;
-    color: rgb(240, 255, 255);
-    font-family: "Quicksand";
+    color: white;
   }
 
   footer {
@@ -683,7 +682,7 @@ h4 {
     align-items: center;
     gap: 80px;
     background-color: rgba(253, 221, 192, 0.257);
-    color: rgb(240, 255, 255);
+    color: white;
     font-family: "Quicksand";
     padding: 80px;
     margin-top: 80px;
@@ -691,7 +690,6 @@ h4 {
   }
 
   footer a {
-    color: rgb(240, 255, 255);
     text-decoration: none;
   }
 }
