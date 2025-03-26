@@ -6,7 +6,8 @@ body {
   flex-direction: column;
   align-items: stretch;
   background-image: url("img/background2.jpeg");
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "quicksand";
 }
 
@@ -15,6 +16,7 @@ main {
   flex-direction: column;
   align-items: stretch;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 nav {
@@ -307,7 +309,7 @@ footer a {
   align-items: flex-start;
   font-family: "quicksand";
   background-color: rgba(253, 221, 192, 0.257);
-  color:white;
+  color: white;
   padding: 40px;
   flex: 2;
   gap: 20px;
@@ -396,7 +398,7 @@ footer a {
   align-items: center;
 }
 
-.filled-content h3{
+.filled-content h3 {
   font-style: bold;
 }
 .containercontent {
@@ -467,18 +469,17 @@ button {
   background: rgb(81, 22, 114);
   padding: 20px 60px;
   margin-top: 40px;
-  border:none;
+  border: none;
   border-radius: 20px;
   cursor: pointer;
   font-family: "quicksand";
   font-size: 20px;
 }
 
-button:hover{
+button:hover {
   color: rgb(52, 30, 103);
   background: white;
 }
-
 
 h1 {
   font-size: 100px;
@@ -513,11 +514,10 @@ h4 {
   .lebenslaufheader .row div:not(.filled-content) {
     display: none;
   }
-  
-  .filled-content h3{
+
+  .filled-content h3 {
     font-weight: bold;
   }
-  
 }
 
 @media (max-width: 768px) {
@@ -595,7 +595,7 @@ h4 {
     padding: 80px;
     flex-wrap: wrap;
   }
-  
+
   .skillcontent {
     display: flex;
     justify-content: center;
@@ -607,20 +607,19 @@ h4 {
     overflow: hidden;
     border-radius: 20px;
   }
-  
+
   .skillcontent img {
     width: 200px;
   }
-  
+
   .skillcontent span {
     opacity: 1;
     position: absolute;
     font-size: 30px;
     font-style: bold;
     color: white;
-    padding-top:300px
+    padding-top: 300px;
   }
-  
 
   .kacheln {
     display: flex;
@@ -684,7 +683,6 @@ h4 {
     color: white;
   }
 
-
   .commingheader {
     display: flex;
     flex-direction: column;
@@ -713,16 +711,6 @@ h4 {
     text-decoration: none;
   }
 
-  .commingheader {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 60px;
-    padding-top: 60px;
-    color: white;
-  }
-
   .loader {
     font-size: 16px;
     display: inline-block;
@@ -731,34 +719,40 @@ h4 {
     box-sizing: border-box;
     animation: spotlight 2s linear infinite alternate;
   }
-  
+
   @keyframes spotlight {
-    0% , 20% {
+    0%,
+    20% {
       opacity: 1;
       letter-spacing: 1px;
-     }
-   80% , 100% {
+    }
+    80%,
+    100% {
       opacity: 0;
       letter-spacing: 16px;
-     }
+    }
   }
 }
 
-/* CommingSoon */
-
-.commingheader {
+.comingheader {
   display: flex;
+  position: absolute;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 120px;
-  padding-top: 120px;
+  text-align: center;
   color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+.comingheader span {
+  text-wrap: nowrap;
+}
 /* Animation */
 .loader {
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 600;
   display: inline-block;
   letter-spacing: 2px;
@@ -768,13 +762,14 @@ h4 {
 }
 
 @keyframes spotlight {
-  0% , 20% {
+  0%,
+  20% {
     opacity: 1;
     letter-spacing: 2px;
-   }
- 80% , 100% {
+  }
+  80%,
+  100% {
     opacity: 0;
     letter-spacing: 32px;
-   }
+  }
 }
-      
