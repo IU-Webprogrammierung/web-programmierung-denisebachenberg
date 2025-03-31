@@ -114,6 +114,10 @@ li a {
   height: 300px;
   font-family: "quicksand";
   font-size: 20pt;
+
+  & > p {
+    animation: slide-in 7s infinite;
+  }
 }
 
 .quotetext {
@@ -124,6 +128,23 @@ li a {
   font-family: "Princess Sofia";
   padding: 20px;
   font-size: 30pt;
+  animation: slide-in 7s infinite;
+  animation-direction: normal;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100vw);
+  }
+  30% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100vw);
+  }
 }
 
 .skillheader {
@@ -141,7 +162,7 @@ li a {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  gap: 100px;
+  gap: 200px;
   padding: 80px;
   flex-wrap: wrap;
 }
@@ -152,14 +173,14 @@ li a {
   align-items: center;
   position: relative;
   transition: transform 0.3s ease-in-out;
-  width: 500px;
-  height: 250px;
+  width: 400px;
+  height: 200px;
   overflow: hidden;
   border-radius: 20px;
 }
 
 .skillcontent img {
-  width: 250px;
+  width: 200px;
 }
 
 .skillcontent span {
@@ -187,11 +208,11 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;
+  gap: 50px;
   background-color: rgba(253, 221, 192, 0.257);
   color: white;
   font-family: "Quicksand";
-  padding: 40px;
+  padding: 80px;
   margin-top: 80px;
   overflow: hidden;
 }
@@ -455,7 +476,7 @@ form {
   justify-content: center;
   padding: 20px;
   display: inline-block;
-  width: 50vw;
+  width: 60vw;
   background-color: white;
   border-radius: 16px;
   border-style: none;
@@ -465,9 +486,9 @@ form {
 
 button {
   display: flex;
-  color: white;
-  background: rgb(81, 22, 114);
-  padding: 20px 60px;
+  color: rgb(64, 45, 104);
+  background: rgb(255, 255, 255);
+  padding: 20px 40px;
   margin-top: 40px;
   border: none;
   border-radius: 20px;
@@ -477,8 +498,8 @@ button {
 }
 
 button:hover {
-  color: rgb(52, 30, 103);
-  background: white;
+  color: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.346);
 }
 
 h1 {
@@ -493,7 +514,7 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: lighter;
 }
 
@@ -571,9 +592,8 @@ h4 {
     align-items: center;
     color: white;
     background-color: rgba(253, 221, 192, 0.257);
-    height: 300px;
+    height: 200px;
     font-family: "quicksand";
-    font-size: 16pt;
   }
 
   .quotetext {
@@ -582,7 +602,6 @@ h4 {
     justify-content: center;
     align-items: center;
     font-family: "Princess Sofia";
-    padding: 50px;
     font-size: 16pt;
   }
 
@@ -681,6 +700,18 @@ h4 {
     padding-bottom: 80px;
     padding-top: 80px;
     color: white;
+  }
+
+  .contactform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(253, 221, 192, 0.257);
+    color: white;
+    font-family: "Quicksand";
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
   }
 
   .commingheader {
