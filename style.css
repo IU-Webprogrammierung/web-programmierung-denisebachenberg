@@ -305,6 +305,26 @@ footer h3{
   flex-direction: row;
   margin-bottom: 80px;
   gap: 40px;
+  animation: 3s lineUp;
+  animation-direction: normal;
+}
+
+@keyframes lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 .cards .card:nth-child(2n + 1) {
@@ -388,6 +408,26 @@ footer h3{
   overflow: hidden;
   flex-direction: column;
   gap: 40px;
+  animation: 3s lineUp;
+  animation-direction: normal;
+}
+
+@keyframes lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 .kacheln .row {
@@ -557,6 +597,26 @@ form {
   margin: 80px;
   padding: 80px;
   border-radius: 20px;
+  animation: 3s lineUp;
+  animation-direction: normal;
+}
+
+@keyframes lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 .input-container {
@@ -747,6 +807,7 @@ h4 {
     overflow: hidden;
     flex-direction: column;
     gap: 40px;
+    
   }
 
   .kachel {
