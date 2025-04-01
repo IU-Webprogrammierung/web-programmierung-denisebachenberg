@@ -86,7 +86,7 @@ li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 982px;
+  height: 860px;
   align-items: stretch;
 }
 
@@ -98,6 +98,26 @@ li a {
   color: white;
   align-items: center;
   gap: 50px;
+  animation: 2s lineUp;
+  animation-direction: normal;
+}
+
+@keyframes lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 .text * {
@@ -131,6 +151,7 @@ li a {
   animation: slide-in 7s infinite;
   animation-direction: normal;
 }
+
 
 @keyframes slide-in {
   from {
@@ -205,34 +226,49 @@ li a {
 
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  gap: 50px;
   background-color: rgba(253, 221, 192, 0.257);
-  color: white;
+  color: rgba(255, 255, 255, 0.904);
   font-family: "Quicksand";
-  padding: 80px;
-  margin-top: 80px;
   overflow: hidden;
 }
 
 footer a {
-  color: white;
+  color: rgba(255, 240, 227, 0.739);
   text-decoration: none;
-  padding: 10px;
+  padding: 20px;
+}
+
+footer h3{
+  font-weight: bold;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+  padding:50px 0 0 0px;
 }
 
 .footercontent {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .footercontent * {
   text-align: center;
+}
+
+.footercontentx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(250, 235, 215, 0.429);
+  padding:30px;
 }
 
 /*Projekte*/
@@ -246,6 +282,26 @@ footer a {
   padding-top: 80px;
   color: white;
   font-family: "Quicksand";
+  animation: 2s lineUp;
+  animation-direction: normal;
+}
+
+@keyframes lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 .card {
@@ -305,6 +361,26 @@ footer a {
   padding-bottom: 20px;
   padding-top: 120px;
   color: white;
+  animation: 2s lineUp;
+  animation-direction: normal;
+}
+
+@keyframes lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 .kacheln {
@@ -446,6 +522,26 @@ footer a {
   padding-top: 80px;
   color: white;
   font-family: "Quicksand";
+  animation: 2s lineUp;
+  animation-direction: normal;
+}
+
+@keyframes lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 form {
