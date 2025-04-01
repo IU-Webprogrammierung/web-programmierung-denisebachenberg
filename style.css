@@ -136,7 +136,7 @@ li a {
   font-size: 20pt;
 
   & > p {
-    animation: slide-in 7s infinite;
+    animation: slide-in 3s ;
   }
 }
 
@@ -148,7 +148,7 @@ li a {
   font-family: "Princess Sofia";
   padding: 20px;
   font-size: 30pt;
-  animation: slide-in 7s infinite;
+  animation: slide-in 3s;
   animation-direction: normal;
 }
 
@@ -157,15 +157,10 @@ li a {
   from {
     transform: translateX(-100vw);
   }
-  30% {
-    transform: translateX(0);
-  }
-  60% {
-    transform: translateX(0);
-  }
   to {
-    transform: translateX(100vw);
+    transform: translateX(0);
   }
+  
 }
 
 .skillheader {
@@ -232,6 +227,7 @@ footer {
   color: rgba(255, 255, 255, 0.904);
   font-family: "Quicksand";
   overflow: hidden;
+  margin-top: 50px;
 }
 
 footer a {
@@ -655,8 +651,14 @@ h4 {
     margin: 10px 0;
   }
 
+ .footercontentx h3 {
+  font-size: 16px;
+
+  }
+
   footer {
     flex-direction: column;
+    font-size: 14px;
   }
 
   #desktop-navigation {
