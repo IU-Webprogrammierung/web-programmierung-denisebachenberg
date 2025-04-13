@@ -691,6 +691,48 @@ h3 {
 h4 {
   margin: 5px 0;
 }
+
+.comingheader {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.comingheader span {
+  text-wrap: nowrap;
+}
+
+.loader {
+  font-size: 60px;
+  font-weight: 600;
+  display: inline-block;
+  letter-spacing: 2px;
+  font-family: "Quicksand";
+  box-sizing: border-box;
+  animation: spotlight 2s linear infinite alternate;
+}
+
+@keyframes spotlight {
+  0%,
+  20% {
+    opacity: 1;
+    letter-spacing: 2px;
+  }
+  80%,
+  100% {
+    opacity: 0;
+    letter-spacing: 32px;
+  }
+}
+
+
 /* Device Responsive */
 
 @media (max-width: 1000px) {
@@ -711,9 +753,12 @@ h4 {
   }
 }
 
+/* Device Responsive Mobile*/
+
+
 @media (max-width: 768px) {
   h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     margin: 10px 0;
   }
@@ -761,18 +806,11 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    background-color: rgba(253, 221, 192, 0.257);
     height: 200px;
-    font-family: "quicksand";
   }
 
   .quotetext {
     flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Princess Sofia";
     font-size: 16pt;
   }
 
@@ -827,9 +865,6 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-family: "quicksand";
-    background-color: rgba(253, 221, 192, 0.257);
-    color: white;
     padding: 40px;
     gap: 20px;
     justify-content: center;
@@ -871,16 +906,12 @@ h4 {
     align-items: center;
     padding-bottom: 80px;
     padding-top: 80px;
-    color: white;
   }
 
   .contactform {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(253, 221, 192, 0.257);
-    color: white;
-    font-family: "Quicksand";
     padding: 30px;
     margin: 30px;
     border-radius: 20px;
@@ -893,7 +924,6 @@ h4 {
     align-items: center;
     padding-bottom: 80px;
     padding-top: 80px;
-    color: white;
   }
 
   footer {
@@ -901,9 +931,6 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(253, 221, 192, 0.257);
-    color: white;
-    font-family: "Quicksand";
     padding: 80px;
     margin-top: 80px;
     overflow: hidden;
@@ -919,7 +946,7 @@ h4 {
   }
 
   .loader {
-    font-size: 16px;
+    font-size: 30px;
     display: inline-block;
     letter-spacing: 2px;
     font-family: "Quicksand";
@@ -941,42 +968,4 @@ h4 {
   }
 }
 
-.comingheader {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
-.comingheader span {
-  text-wrap: nowrap;
-}
-/* Animation */
-.loader {
-  font-size: 60px;
-  font-weight: 600;
-  display: inline-block;
-  letter-spacing: 2px;
-  font-family: "Quicksand";
-  box-sizing: border-box;
-  animation: spotlight 2s linear infinite alternate;
-}
-
-@keyframes spotlight {
-  0%,
-  20% {
-    opacity: 1;
-    letter-spacing: 2px;
-  }
-  80%,
-  100% {
-    opacity: 0;
-    letter-spacing: 32px;
-  }
-}
