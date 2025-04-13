@@ -8,7 +8,7 @@ Die Webseite soll ein erstes Portfolio für mich uund meine bisherigen Arbeiten 
 Ziel soll es sein, dass die Porfoliowebsite meine bisherigen Projekte, meine Kentnisse und mich selber vorstellt. Zudem soll die Webseite am Ende aucch als Teil meiner Bewerbungen dienen können.
 
 ## **Aufbau:**
-### Der Aufbau soll sich auf 4 Seiten beschränken:
+### Der Aufbau soll sich auf vier Seiten beschränken:
 1. Startseite (Index.html)
 2. Über Mich (aboutme.html)
 3. Projekte (projekte.html)
