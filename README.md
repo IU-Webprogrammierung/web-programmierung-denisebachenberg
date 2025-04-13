@@ -18,4 +18,3 @@ Ziel soll es sein, dass die Porfoliowebsite meine bisherigen Projekte, meine Ken
 ### Die Umsetzung erfolgt mit folgenden Mitteln:
 + HTML
 + CSS
-+ JavaScript
