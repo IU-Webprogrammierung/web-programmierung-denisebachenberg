@@ -1,5 +1,4 @@
 body {
-  background-color: white;
   width: 100%;
   display: flex;
   margin: 0px;
@@ -893,10 +892,6 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(253, 221, 192, 0.257);
-    color: white;
-    font-family: "Quicksand";
-    border-radius: 20px;
   }
 
   .contactheader {
@@ -949,7 +944,6 @@ h4 {
     font-size: 30px;
     display: inline-block;
     letter-spacing: 2px;
-    font-family: "Quicksand";
     box-sizing: border-box;
     animation: spotlight 2s linear infinite alternate;
   }
